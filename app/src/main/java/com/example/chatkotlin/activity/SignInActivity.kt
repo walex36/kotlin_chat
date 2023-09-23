@@ -52,7 +52,6 @@ class SignInActivity : AppCompatActivity() {
         binding.signinBtnSignup.setOnClickListener {
             val signupPage = Intent(this, SignUpActivity::class.java)
             startActivity(signupPage)
-            finish()
         }
     }
 

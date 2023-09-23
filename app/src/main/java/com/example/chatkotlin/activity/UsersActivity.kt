@@ -41,7 +41,9 @@ class UsersActivity : AppCompatActivity() {
 
         binding.imgBack.setOnClickListener {
             auth.signOut()
-            onBackPressed()
+            val signInPage = Intent(this@UsersActivity, SignInActivity::class.java)
+            startActivity(signInPage)
+            finish()
         }
 
         binding.userImage.setOnClickListener {
@@ -66,7 +68,7 @@ class UsersActivity : AppCompatActivity() {
             override fun onCancelled(error: DatabaseError) {
                 Toast.makeText(applicationContext, error.message, Toast.LENGTH_SHORT).show()
             }
-        });
+        })
 
     }
 
