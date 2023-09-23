@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Chat Kotlin</string>
+
+    <!-- SignUp -->
+    <string name="signup_title">Inscrever-se</string>
+    <string name="signup_btn_signup">Inscrever-se</string>
+    <string name="signup_btn_return">Voltar</string>
+    <string name="signup_name">Nome</string>
+    <string name="signup_email">Email</string>
+    <string name="signup_password">Senha</string>
+    <string name="signup_confirm_password">Confirmar Senha</string>
+
+    <!-- SignIn -->
+    <string name="signin_title">Entrar</string>
+    <string name="signin_email">Email</string>
+    <string name="signin_password">Senha</string>
+    <string name="signin_btn_signup">Inscrever-se</string>
+    <string name="signin_btn_signin">Entrar</string>
+
+    <!-- Users -->
+    <string name="users_title">Messagens</string>
+
+    <!-- Profile-->
+    <string name="profile_title">Perfil</string>
+    <string name="profile_btn_save">Salvar</string>
+
+    <!-- chat -->
+    <string name="chat_message">Mensagem</string>
+</resources>
