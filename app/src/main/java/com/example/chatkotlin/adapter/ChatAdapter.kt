@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.chatkotlin.R
 import com.example.chatkotlin.model.Chat
 import com.google.firebase.auth.FirebaseAuth
@@ -47,7 +48,6 @@ class ChatAdapter(private val context: Context, private val chatList: ArrayList<
     class ChatViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val txtChatMessage: TextView = view.findViewById(R.id.tv_message)
         val txtTemp: TextView = view.findViewById(R.id.tv_time)
-        val imgUser: CircleImageView = view.findViewById(R.id.userImage)
     }
 
     override fun getItemViewType(position: Int): Int {

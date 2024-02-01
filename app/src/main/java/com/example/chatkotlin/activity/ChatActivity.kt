@@ -25,6 +25,7 @@ class ChatActivity : AppCompatActivity() {
     private lateinit var binding: ActivityChatBinding
     private lateinit var dbRef: DatabaseReference
     private lateinit var userAuth: FirebaseUser
+    private lateinit var friendData: User
     var chatList = ArrayList<Chat>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,8 +64,8 @@ class ChatActivity : AppCompatActivity() {
         dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val user = snapshot.getValue(User::class.java)!!
-                binding.tvUserName.text = user.userName
                 if (user != null) {
+                    binding.tvUserName.text = user.userName
                     Glide.with(this@ChatActivity).load(user.profileImage)
                         .placeholder(R.drawable.profile_image).into(binding.userImage)
                 }
